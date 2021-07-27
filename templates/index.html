@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <div class="myname"> Kwangeun Son </div>
     <div>
-        <p class="comment">Sontfolio</p>
+        <p class="comment">Portfolio</p>
     </div>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapi.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
@@ -13,7 +13,8 @@
 
 <body style = "background-color:aquamarine;">
     <div class="row">
-        <button type="button" class="button">Resume</button>
+        <button type="button hover1" class="button hover1" onclick="location.href='before.html'">Resume</button>
+        <p class="comment2">This site has been visited {{ count }} times for today.</p>
     </div>
 
 
@@ -40,6 +41,15 @@ margin-bottom:20%;
 font-size:2rem;
 }
 
+.comment2{
+color:black;
+text-align: center;
+margin-top:5;
+margin-bottom:20%;
+font-size:2rem;
+}
+
+
 .row{
 text-align:center;
 }
@@ -55,7 +65,17 @@ border-radius: 1rem;
 border:none;
 margin-top:0%;
 margin-bottom: 5%;
+cursor:pointer;
+transition:all 1.2s, color 1.2;
 }
+.button:hover{
+    color:black;
+}
+.hover1:hover{
+    box-shadow: 300px 0 0 0 cadetblue inset,
+                -300px 0 0 0 cadetblue inset;
+}
+
 </style>
 
 
