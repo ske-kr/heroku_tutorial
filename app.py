@@ -42,5 +42,22 @@ def resume():
     
     return render_template("resume.html")    
 
+@app.route("/info")
+def resume():
+    
+    return render_template("info.html")  
+
+@app.route("/exprience")
+def resume():
+    
+    return render_template("exprience.html")  
+
+@app.route("/project")
+def resume():
+    
+    return render_template("project.html")  
+
+
+
 if __name__ == "__main__":
     app.run()
