@@ -21,5 +21,10 @@ def index():
     # Render HTML with count variable
     return render_template("index.html", count=count)
 
+@app.route("/resume")
+def resume():
+    
+    return render_template("before.html")    
+
 if __name__ == "__main__":
     app.run()
