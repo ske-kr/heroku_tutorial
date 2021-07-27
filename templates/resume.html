@@ -9,7 +9,6 @@
 <body style="background: #f5f5f5;">
     <nav>
         <div class="nav_bar">
-            <img class="back" src="left.png" onclick="location.href='index'">
             <p class="title">
                 메뉴
             </p>
@@ -27,7 +26,10 @@
             <button class="button3" type="button" onclick="location.href=''" >프로젝트</button>
             <button class="button4" type="button" onclick="location.href='https://github.com/ske-kr'" >깃헙</button>
         </div>
-        
+    
+        <div class="backrow">
+            <button type="button" class="back" onclick="location.href='index'">돌아가기</button>
+        </div>
     </div>
 </body>
 
@@ -53,9 +55,17 @@ nav{
 
 
 .back{
-    float:left;
-    margin:15px 2px;
-    width:55px;
+    position:relative;
+    margin-top:50px;
+    color:black;
+    font-size: 2rem;
+    background-color:thistle ;
+    width:15%;
+    height:10%;
+    margin-bottom:5px;
+    border:thistle;
+    transition:all 1.2s, color 1.2;
+    cursor:pointer;
 }
 
 .title{
