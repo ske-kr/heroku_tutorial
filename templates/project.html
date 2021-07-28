@@ -16,9 +16,25 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="projectinfo">
+            <div>
+                <button type="button" class="projectbtn" onclick="location.href='https://github.com/swsnu/swpp2019-team17/wiki/Design-and-Planning'">1)Tutoring machine project</button>
+            </div>
+
+            <div>
+                <button type="button" class="projectbtn" onclick="location.href='https://colab.research.google.com/drive/1MG5pELmAcUrCr_twLCZeWNBtxLH3DUvD'">2)RSNA 뇌내출혈 detection project</button>
+            </div>
+
+            <div>
+                <p>그 외 toy project는 git에 있습니다</p>
+            </div>
+        </div>
+
+    </div>
     
         <div class="backrow">
-            <button type="button" class="back" onclick="location.href='index'">돌아가기</button>
+            <button type="button" class="back" onclick="location.href='resume'">돌아가기</button>
         </div>
 
 </body>
@@ -67,7 +83,32 @@ nav{
     font-weight:bold;
 }
 
+.container{
+    background-color: white;
+    border-radius: 50px;
+    width:90%;
+    margin-left:5%;
+    padding-top:5%;
+    padding-bottom:5%;
 
+}
 
+.projectinfo{
+    margin-left:10%;
+    font-size:2rem;
+}
+
+.projectbtn{
+    color:black;
+    text-align: left;
+    font-size: 2rem;
+    background-color:rgb(252,143,157) ;
+    width:80%;
+    height:11%;
+    margin-bottom:5px;
+    border:none;
+    transition:all 1.2s, color 1.2;
+    cursor:pointer;
+}
 </style>
 </html>
